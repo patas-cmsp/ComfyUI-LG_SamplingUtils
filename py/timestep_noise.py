@@ -65,7 +65,7 @@ class ZImageTimestepNoise:
 
     RETURN_TYPES = ("MODEL",)
     FUNCTION = "patch"
-    CATEGORY = "advanced/model"
+    CATEGORY = "🎈LAOGOU/Sampling Utils"
     DESCRIPTION = "对 timestep 添加噪声扰动，改变模型对去噪步骤的感知。sigma 模式适用于传统扩散模型，flow 模式适用于 Flow Matching 模型（如 ZImage/Lumina2）。可选遮罩限制影响区域。"
 
     def patch(self, model, sigmas, mode, noise_strength, seed, start_percent, end_percent, mask=None):

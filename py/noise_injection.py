@@ -70,7 +70,7 @@ class LGNoiseInjection:
 
     RETURN_TYPES = ("MODEL",)
     FUNCTION = "apply"
-    CATEGORY = "advanced/model"
+    CATEGORY = "🎈LAOGOU/Sampling Utils"
     DESCRIPTION = "将参考图像的特征（如水珠、纹理等）注入到生成结果中。"
 
     def apply(self, model, vae, reference_image, strength, start_percent, end_percent, mask=None):
@@ -242,7 +242,7 @@ class LGNoiseInjectionLatent:
 
     RETURN_TYPES = ("MODEL",)
     FUNCTION = "apply"
-    CATEGORY = "advanced/model"
+    CATEGORY = "🎈LAOGOU/Sampling Utils"
     DESCRIPTION = "直接输入 latent 进行特征注入，自动使用 latent 的 noise_mask 作为遮罩。"
 
     def apply(self, model, reference_latent, strength, start_percent, end_percent):

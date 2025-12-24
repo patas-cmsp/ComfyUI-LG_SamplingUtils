@@ -48,7 +48,7 @@ class ModelSamplingZImage:
 
     RETURN_TYPES = ("MODEL",)
     FUNCTION = "patch"
-    CATEGORY = "advanced/model"
+    CATEGORY = "🎈LAOGOU/Sampling Utils"
     DESCRIPTION = "调整 ZImage/Lumina2 模型的采样参数。可设置 shift 和 multiplier。"
 
     def patch(self, model, shift, multiplier):

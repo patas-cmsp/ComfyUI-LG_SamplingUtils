@@ -41,7 +41,7 @@ class SigmasEditor:
     RETURN_TYPES = ("SIGMAS",)
     RETURN_NAMES = ("adjusted_sigmas",)
     FUNCTION = "adjust_sigmas"
-    CATEGORY = "sampling/custom_sampling/sigmas"
+    CATEGORY = "🎈LAOGOU/Sampling Utils"
     DESCRIPTION = "Interactively adjust sigmas curve by dragging control points"
     
     def adjust_sigmas(self, sigmas, sigmas_adjustments="[]", unique_id=None):
