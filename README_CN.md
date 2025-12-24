@@ -1,6 +1,6 @@
 # ComfyUI-LG_SamplingUtils
 
-![Image](./assets/1.png)
+![Image](./assets/1.jpg)
 
 **中文** | [English](README.md)
 
